@@ -18,7 +18,16 @@ This compact NLP project, developed for the **_Introduction to Data Science_** c
 - **MLPClassifier:** A feedforward neural network with one hidden layer of 100 units, using ReLU activation and the Adam optimizer.
 
 ## 🛠️ Tools and Libraries
-- Python, scikit-learn, NLTK, pandas, numpy, langdetect, matplotlib, seaborn, emoji, emoticon
+- Python
+- scikit-learn
+- NLTK
+- pandas
+- numpy
+- langdetect
+- matplotlib
+- seaborn
+- emoji
+- emoticon_fix
 
 ## ⚙️ Setup
 1. Download the repository from GitHub.
