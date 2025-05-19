@@ -14,7 +14,7 @@ This compact NLP project, developed for the **_Introduction to Data Science_** c
 
 ## 🧠 Model Architecture
 - **CountVectorizer:** Transforms the text data into token count matrices using unigrams, bigrams, and trigrams (1–3 n-grams).
-- **TfidfTransformer:** Converts token counts to TF-IDF scores with L1 normalization and smoothed IDF values.
+- **TF-IDF Transformer:** Converts token counts to TF-IDF scores with L1 normalization and smoothed IDF values.
 - **MLPClassifier:** A feedforward neural network with one hidden layer of 100 units, using ReLU activation and the Adam optimizer.
 
 ## 🛠️ Tools and Libraries
