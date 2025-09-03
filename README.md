@@ -35,3 +35,9 @@ This compact NLP project, developed for the **_Introduction to Data Science_** c
 2. Install dependencies available on requirements.txt
 3. Install NLTK data
 4. Open IronyDetection.ipynb in a notebook (Google Colab/Jupyter) and run all cells to train and evaluate the model through hyperparameter tuning.
+
+---
+
+## 💫 Credits
+Feel free to explore the documentation, and please give **credit to the owner** when using content from this repo! 
+Many thanks!🙌
