@@ -42,11 +42,14 @@ cd Irony-Detection-Twitter
 
 2️⃣ Install Dependencies
 
-pip install -r `requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 3️⃣ Run the Streamlit App Locally
-
-streamlit run `irony-detection-streamlit.py`
+```bash
+streamlit run irony-detection-streamlit.py
+```
 After the link opens in your browser, enter any text in the input box and click Check Irony, and you should be able to see the predicted label.
 
 ## 🔑Notes
