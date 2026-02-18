@@ -50,7 +50,7 @@ def preProcessingModule(text):
 # --- Load trained model ---
 @st.cache_resource
 def load_model():
-    return joblib.load('Irony-Detection-Twitter/irony_model.pkl')
+    return joblib.load('irony_model.pkl')
 
 model = load_model()
 
