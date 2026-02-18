@@ -7,11 +7,20 @@ import unicodedata
 from nltk.tokenize import word_tokenize, TweetTokenizer
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
+import nltk
+from nltk.data import find
 from emoticon_fix import emoticon_fix
 
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
+# --- Download NLTK resources if missing ---
+try:
+    find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+try:
+    find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 
 # --- Preprocessing functions ---
 tknzr = TweetTokenizer()
@@ -52,7 +61,7 @@ def load_model():
 model = load_model()
 
 # --- Streamlit UI ---
-st.title("🔹Irony Detection🔹")
+st.title("Irony Detection 🔹 IroniQ")
 st.write("Enter any sentence or tweet to check if it is ironic or not.")
 
 user_input = st.text_area("Your Text Here:")
