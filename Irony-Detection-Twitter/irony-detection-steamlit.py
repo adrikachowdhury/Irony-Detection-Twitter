@@ -1,5 +1,5 @@
 # Install dependencies
-!pip install streamlit langdetect emoticon-fix scikit-learn nltk
+# pip install streamlit langdetect emoticon-fix scikit-learn nltk
 
 import streamlit as st
 import joblib
