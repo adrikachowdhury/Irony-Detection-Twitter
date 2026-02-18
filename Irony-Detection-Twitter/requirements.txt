@@ -1,9 +1,0 @@
-scikit-learn
-nltk
-numpy
-pandas
-langdetect
-matplotlib
-seaborn
-emoji
-emoticon.fix
