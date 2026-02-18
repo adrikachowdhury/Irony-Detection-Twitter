@@ -1,7 +1,7 @@
 # 🌀 IronyScope- Irony Detection from Twitter Dataset
 
 Live Demo: [IronyScope- Irony Detector](https://ironyscope.streamlit.app/)
-![gif-ezgif com-crop](https://github.com/user-attachments/assets/fa501fb0-beaf-4524-a95b-c1ba7fa634fa)
+<img src="https://github.com/user-attachments/assets/fa501fb0-beaf-4524-a95b-c1ba7fa634fa" alt="Demo GIF" width="300"/>
 
 
 This compact NLP project, developed for the **_Introduction to Data Science_** course, detects irony in Twitter data using a streamlined machine learning pipeline. It leverages the small version of the SemEval-2018 Task-3 dataset, a well-known benchmark for irony detection, to preprocess tweets with NLTK (including tokenization, stemming, stopword removal, emoji, and emoticon conversion), extract TF-IDF features, and train an MLPClassifier for binary classification (ironic: 1 vs. non-ironic: 0). The model's performance is evaluated using macro-average F1-score, accuracy, and a confusion matrix, demonstrating proficiency in text processing, feature engineering, and classification techniques. The macro-average metrics evaluate model performance equally across ironic and non-ironic classes. Designed as an accessible showcase of NLP skills, this project highlights practical data science applications for real-world social media data analysis. This project is also deployed in Streamlit for practice purpose.
