@@ -1,6 +1,11 @@
 # Install dependencies
 # pip install streamlit langdetect emoticon-fix scikit-learn nltk
 
+"""
+Replaced word_tokenize with TweetTokenizer because TweetTokenizer
+works without downloading punkt, making the app cloud-deployable
+"""
+
 import streamlit as st
 import joblib
 import unicodedata
