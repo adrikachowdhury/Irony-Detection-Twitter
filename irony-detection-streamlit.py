@@ -4,28 +4,16 @@
 import streamlit as st
 import joblib
 import unicodedata
-from nltk.tokenize import word_tokenize, TweetTokenizer
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
-import nltk
-from nltk.data import find
+from nltk.tokenize import TweetTokenizer
 from emoticon_fix import emoticon_fix
 
-# --- Download NLTK resources if missing ---
-try:
-    find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-
-try:
-    find('corpora/stopwords')
-except LookupError:
-    nltk.download('stopwords')
-
-# --- Preprocessing functions ---
+# --- Preprocessing setup ---
 tknzr = TweetTokenizer()
 snow_stemmer = SnowballStemmer(language='english')
 
+# --- Preprocessing functions ---
 def EmotToText(text):
     return emoticon_fix(text)
 
@@ -36,12 +24,12 @@ def performAccent(text):
     return unicodedata.normalize('NFD', text).encode('ascii', 'ignore').decode('utf-8')
 
 def peformStopWordRemoval(text):
-    tokens = word_tokenize(text)
-    tokens = [w for w in tokens if w.lower() not in stopwords.words()]
+    tokens = tknzr.tokenize(text)  # Use TweetTokenizer
+    tokens = [w for w in tokens if w.lower() not in stopwords.words('english')]
     return " ".join(tokens)
 
 def peformStemming(text):
-    tokens = word_tokenize(text)
+    tokens = tknzr.tokenize(text)  # Use TweetTokenizer
     tokens = [snow_stemmer.stem(w) for w in tokens]
     return " ".join(tokens)
 
