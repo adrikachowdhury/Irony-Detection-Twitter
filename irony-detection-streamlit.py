@@ -49,7 +49,7 @@ def load_model():
 model = load_model()
 
 # --- Streamlit UI ---
-st.title("Irony Detection 🔹 IroniQ")
+st.title("🔹Irony Detection🔹")
 st.write("Enter any sentence or tweet to check if it is ironic or not.")
 
 user_input = st.text_area("Your Text Here:")
