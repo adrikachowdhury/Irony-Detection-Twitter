@@ -6,4 +6,4 @@ langdetect
 matplotlib
 seaborn
 emoji
-emoticon.fix (custom library)
+emoticon.fix
