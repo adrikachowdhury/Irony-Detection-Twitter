@@ -9,6 +9,8 @@ works without downloading punkt, making the app cloud-deployable
 import streamlit as st
 import joblib
 import unicodedata
+import nltk
+from nltk.data import find
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import TweetTokenizer
