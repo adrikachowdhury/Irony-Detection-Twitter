@@ -1,4 +1,4 @@
-# 🌀 IronyScope- Irony Detection from Twitter Dataset
+# 🌀 IronyScope- Irony Detection
 
 Live Demo: [IronyScope- Irony Detector](https://ironyscope.streamlit.app/)
 <img src="https://github.com/user-attachments/assets/fa501fb0-beaf-4524-a95b-c1ba7fa634fa" alt="Demo GIF" width="900"/>
