@@ -14,6 +14,12 @@ from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import TweetTokenizer
 from emoticon_fix import emoticon_fix
 
+# Ensure stopwords are available
+try:
+    find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
+
 # --- Preprocessing setup ---
 tknzr = TweetTokenizer()
 snow_stemmer = SnowballStemmer(language='english')
