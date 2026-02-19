@@ -53,6 +53,7 @@ pip install -r requirements.txt
 streamlit run irony-detection-streamlit.py
 ```
 After the link opens in your browser, enter any text in the input box and click Check Irony, and you should be able to see the predicted label.
+N.B.- To check out the evaluation scores or modify the optimal settings before deployment, you may run the notebook `colab-version.ipynb`.
 
 ## 🔑Notes
 - The trained model (irony_model.pkl) is already included, so no training is required.
