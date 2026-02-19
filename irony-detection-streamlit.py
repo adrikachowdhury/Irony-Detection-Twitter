@@ -10,17 +10,13 @@ import streamlit as st
 import joblib
 import unicodedata
 import nltk
-from nltk.data import find
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import TweetTokenizer
 from emoticon_fix import emoticon_fix
 
-# Ensure stopwords are available
-try:
-    find('corpora/stopwords')
-except LookupError:
-    nltk.download('stopwords')
+# --- Ensure stopwords are downloaded (cloud-safe) ---
+nltk.download('stopwords', quiet=True)
 
 # --- Preprocessing setup ---
 tknzr = TweetTokenizer()
