@@ -1,13 +1,13 @@
 1. Wrong tokenizer name
-   Issue: The code tried to use 'punkt_tab', which doesn’t exist in NLTK, causing errors.
+   Issue: The code tried to use 'punkt_tab', which doesn't exist in NLTK, causing errors.
    Fix: Replaced 'punkt_tab' and avoided using word_tokenize that relies on it.
 
 2. word_tokenize needs punkt
-   Issue: NLTK’s word_tokenize depends on the 'punkt' tokenizer, which isn’t installed by default on Streamlit Cloud.
+   Issue: NLTK's word_tokenize depends on the 'punkt' tokenizer, which isn't installed by default on Streamlit Cloud.
    Fix: Replaced word_tokenize with TweetTokenizer, which works without downloading punkt.
 
 3. Stopwords not found
-   Issue: Using stopwords.words('english') caused errors because the stopwords corpus wasn’t available in the cloud environment.
+   Issue: Using stopwords.words('english') caused errors because the stopwords corpus wasn't available in the cloud environment.
    Fix: Added nltk.download('stopwords', quiet=True) at runtime to ensure stopwords are available.
 
 4. Using find() at the top
