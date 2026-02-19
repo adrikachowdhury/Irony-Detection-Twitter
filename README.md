@@ -35,7 +35,7 @@ This project is intended for demonstration purposes. While the model can make pr
 - emoji
 - emoticon_fix
 
-## ⚙️ Setup
+## 💻 How to Run Locally
 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/adrikachowdhury/Irony-Detection-Twitter.git
@@ -52,8 +52,10 @@ pip install -r requirements.txt
 ```bash
 streamlit run irony-detection-streamlit.py
 ```
-After the link opens in your browser, enter any text in the input box and click Check Irony, and you should be able to see the predicted label.
-N.B.- To check out the evaluation scores or modify the optimal settings before deployment, you may run the notebook `colab-version.ipynb`.
+
+4️⃣ Open the local URL in your browser to interact with the app. Enter any text in the input box, then click Check Irony, and you should see the predicted label.
+
+5️⃣ Optional- To check out the evaluation scores or modify the optimal settings before deployment, you may run the notebook `colab-version.ipynb`.
 
 ## 🔑Notes
 - The trained model (irony_model.pkl) is already included, so no training is required.
